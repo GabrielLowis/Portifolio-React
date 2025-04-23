@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
 
 import Loader from "./components/Loader";
-import Page from "./components/Page";
+import Page from "./pages/Page.tsx";
 import "./styles/app.css";
 
 // LoaderScreen separado para poder usar navigate dentro
