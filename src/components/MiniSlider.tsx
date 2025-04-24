@@ -17,9 +17,9 @@ const MiniSlider = ({ images }: MiniSliderProps) => {
 
   return (
     <Wrapper>
-      <TopText>READ MORE</TopText>
+      <TopText>--- READ MORE ---</TopText>
       {/* <BottomText>READ MORE</BottomText> */}
-      <LeftText>READ MORE</LeftText>
+      <LeftText>--MORE--</LeftText>
       {/* <RightText>READ MORE</RightText> */}
 
       <SliderContainer>
@@ -54,14 +54,16 @@ const Image = styled.img`
   height: 100%;
   object-fit: cover;
   transition: opacity 0.4s ease;
+  border: 1px solid white;
+  border-radius: 16px;
+
 `;
 
 const TextBase = styled.div`
-  @import url('https://fonts.googleapis.com/css2?family=Sono:wght@200..800&display=swap');
-
+  //@import url("https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
   position: absolute;
-  font-family: 'Sono', sans-serif;
+  font-family: "Tomorrow";
   letter-spacing: 8px;
   font-size: 16px;
   color: black;
@@ -71,25 +73,24 @@ const TextBase = styled.div`
 
 const TopText = styled(TextBase)`
   top: -30px;
-  left: 50%;
+  left: 50.5%;
   transform: translateX(-50%);
 `;
 
-const BottomText = styled(TextBase)`
-  bottom: -30px;
-  left: 50%;
-  transform: translateX(-50%) rotate(180deg);
-`;
+// const BottomText = styled(TextBase)`
+//   bottom: -30px;
+//   left: 50%;
+//   transform: translateX(-50%) rotate(180deg);
+// `;
 
 const LeftText = styled(TextBase)`
-  left: -20px;
+  left: -15px;
   top: 50%;
   transform: translateY(-50%) rotate(-90deg);
 `;
 
-const RightText = styled(TextBase)`
-  right: -20px;
-  top: 50%;
-  transform: translateY(-50%) rotate(90deg);
-`;
-
+// const RightText = styled(TextBase)`
+//   right: -20px;
+//   top: 50%;
+//   transform: translateY(-50%) rotate(90deg);
+// `;
