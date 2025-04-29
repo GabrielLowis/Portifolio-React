@@ -1,0 +1,74 @@
+.right-bar {
+  position: fixed;
+  top: 40%;
+  right: 34px;
+  transform: translateY(-50%);
+  width: 50px !important;
+  height: 220px !important;
+  /* background-color: #f0f0f0; */
+  border: 2px solid white;
+  border-radius: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* centraliza ícones verticalmente */
+  align-items: center;
+  padding: 5px 0;
+  /* z-index: 1000; */
+  /* box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1); */
+}
+
+/* .icon-right-bar {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 100%;
+  transition: all 0.3s ease;
+
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.icon-cheked {
+  all: unset;
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 100%;
+  transform: scale(1.1);
+
+  color: black;
+
+  cursor: pointer;
+} */
+
+.icon-right-bar {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 100%;
+
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease; /* animação suave */
+}
+
+.icon-checked {
+  background-color: white;
+  width: 40px !important; 
+  height: 40px !important;
+
+  color: black !important;
+}
+

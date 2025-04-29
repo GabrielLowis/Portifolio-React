@@ -17,9 +17,9 @@ const MiniSlider = ({ images }: MiniSliderProps) => {
 
   return (
     <Wrapper>
-      <TopText>--- READ MORE ---</TopText>
+      <TopText>--- PROJECTS ---</TopText>
       {/* <BottomText>READ MORE</BottomText> */}
-      <LeftText>--MORE--</LeftText>
+      <LeftText>--READ--</LeftText>
       {/* <RightText>READ MORE</RightText> */}
 
       <SliderContainer>
@@ -36,6 +36,8 @@ const Wrapper = styled.div`
   width: 400px;
   height: 300px;
   margin: 40px auto;
+
+  cursor: pointer;
 `;
 
 const SliderContainer = styled.div`
@@ -47,16 +49,15 @@ const SliderContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-`;
-
-const Image = styled.img`
+  `;
+  
+  const Image = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: opacity 0.4s ease;
   border: 1px solid white;
   border-radius: 16px;
-
 `;
 
 const TextBase = styled.div`

@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+.roboto-condensed {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.screen-projects {
+  background-color: black;
+  height: 100vh;
+  width: 100%;
+}
+
+.screen-projects header {
+  /* background-color: red; */
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 160px;
+  /* padding-top: 25px; */
+
+  font-family: "Lekton", monospace;
+  font-size: 25px;
+  color: white;
+}
+
+.screen-projects main {
+  /* background-color: red; */
+  width: 100%;
+  height: 90vh;
+  display: flex;
+}
+
+.screen-projects main > div {
+  /* background-color: red; */
+  width: 33%;
+  height: 100%;
+}
+
+.screen-projects main > div:nth-of-type(1) {
+  background-color: red;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-one-projects {
+  background-color: #fddda4;
+  max-width: 90%;
+  height: 210px;
+  display: flex;
+  padding: 15px 20px;
+  border-radius: 15px;
+  margin-top: 130px;
+}
+
+.name-card-projects {
+  /* background-color: blue; */
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  overflow: visible;
+}
+
+.name-card-projects img {
+  width: 300px;
+  margin-left: -55px;
+  transform: rotate(-20deg);
+}
+
+.text-container {
+  /* background-color: green; */
+  display: flex;
+  width: 60% !important;
+  align-items: center;
+  padding: 15px;
+}
+
+.text-container h2 {
+  max-width: 100% !important;
+  font-family: "Roboto Condensed";
+  font-weight: 300;
+  font-size: 40px;
+  color: black;
+}
+
+.text-container h2 b {
+  font-weight: 700;
+}
+
+
+
+
+
+
+
+.container-cards-projects {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: 100%;
+  /* background-color: gray; */
+  margin-top: 20px;
+
+  gap: 20px;
+}
+
+.card-two-projects {
+  background-color: green;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+  border-radius: 15px;
+
+  font-family: "Roboto Condensed";
+  font-size: 25px;
+  line-height: 20px;
+  color: white;
+}
+
+.card-two-projects p:nth-of-type(2) {
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.card-three-projects {
+  background-color: blue;
+  width: 50%;
+  height: 100%;
+}
+
+
+
+
+
+
+.screen-projects main > div:nth-of-type(2) {
+  background-color: aqua;
+}

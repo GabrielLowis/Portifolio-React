@@ -1,0 +1,42 @@
+/* CSS para o cursor */
+.cursor-dot,
+.cursor-outline {
+  position: absolute;
+  pointer-events: none;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  width: 20px; /* Tamanho do ponto */
+  height: 20px;
+  border-radius: 50%;
+  background-color: white; /* Cor do ponto */
+  transform: translate(-50%, -50%);
+}
+
+/* Opacidade */
+.cursor-dot.opacity-0,
+.cursor-outline.opacity-0 {
+  opacity: 0;
+}
+
+.cursor-dot.opacity-100,
+.cursor-outline.opacity-100 {
+  opacity: 1;
+}
+
+/* Escala */
+.cursor-dot.scale-50 {
+  transform: translate(-50%, -50%) scale(0.5);
+}
+
+.cursor-outline.scale-150 {
+  transform: translate(-50%, -50%) scale(1.5);
+}
+
+.cursor-outline.scale-200 {
+  transform: translate(-50%, -50%) scale(2);
+}
+
+/* Aqui você pode personalizar o estilo das bordas, cor, etc. */
+.cursor-outline {
+    
+  border: 2px solid #000; /* Borda do cursor */
+}
