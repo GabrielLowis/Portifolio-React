@@ -9,8 +9,8 @@ import CustomCursor from "../components/CustomCursor";
 
 import { motion } from "framer-motion";
 
-import bestImg from "../assets/imgs/best.jpg";
-import imagemTeste from "../assets/imgs/imagem-de-fundo-yeaxrij2aepc1xio.jpg";
+import bestImg from "../assets/imgs/GDM.png";
+import imagemTeste from "../assets/imgs/PETSHOP.png";
 
 import "../styles/page.css";
 

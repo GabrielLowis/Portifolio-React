@@ -47,7 +47,7 @@
 }
 
 .screen-projects main > div:nth-of-type(1) {
-  background-color: red;
+  /* background-color: red; */
   padding: 25px;
   display: flex;
   flex-direction: column;
@@ -76,6 +76,7 @@
   width: 300px;
   margin-left: -55px;
   transform: rotate(-20deg);
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 1));
 }
 
 .text-container {
@@ -98,12 +99,6 @@
   font-weight: 700;
 }
 
-
-
-
-
-
-
 .container-cards-projects {
   display: flex;
   flex-direction: row;
@@ -116,7 +111,20 @@
 }
 
 .card-two-projects {
-  background-color: green;
+  /* background-color: gray; */
+  background-image: linear-gradient(
+      to bottom,
+      black 0%,
+      transparent 20%,
+      transparent 80%,
+      black 100%
+    ),
+    url("../assets/imgs/clock.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  position: relative;
   width: 50%;
   height: 100%;
   display: flex;
@@ -136,17 +144,154 @@
   line-height: 12px;
 }
 
-.card-three-projects {
-  background-color: blue;
-  width: 50%;
-  height: 100%;
+.arrow-card-projects {
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 10px 5px 5px 10px;
+  border-radius: 15px 0 0 0;
 }
 
+.arrow-card-projects div {
+  background-color: #fddda4;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 5px; */
+  border-radius: 100%;
+  transform: rotate(145deg);
+}
 
+.arrow-card-projects-2 {
+  background-color: black;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px 5px 10px 10px;
+  border-radius: 0 0 0 15px;
+}
 
+.arrow-card-projects-2 div {
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 5px; */
+  border-radius: 100%;
+  transform: rotate(45deg);
+}
 
+.card-three-projects {
+  background-color: rgb(36, 36, 36);
+  position: relative;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: end;
+  padding: 70px 15px 15px 80px;
+  border-radius: 15px;
+  gap: 20px;
 
+  font-family: "Roboto Condensed";
+  font-size: 35px;
+  line-height: 30px;
+  color: white !important;
+  text-align: right;
+}
+
+.card-three-projects img {
+  position: absolute;
+  top: -10px;
+  left: -24px;
+  width: 130px !important;
+  transform: rotate(75deg);
+}
+
+.card-three-projects p:nth-of-type(2) {
+  /* background-color: red; */
+  width: 150px; /* define o tamanho */
+  word-wrap: break-word; /* permite quebra de palavra longa */
+  overflow-wrap: break-word; /* mesma coisa, mais compatível */
+
+  font-size: 12px;
+  line-height: 12px;
+}
 
 .screen-projects main > div:nth-of-type(2) {
-  background-color: aqua;
+  background: linear-gradient(to right, black, gray 50%, black),
+    linear-gradient(to bottom, black, gray 50%, black);
+  background-blend-mode: multiply;
+}
+
+/* ----------------------------------------------------------------------------- */
+.screen-projects main > div:nth-of-type(3) {
+  /* background-color: red; */
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 40px;
+}
+
+.card-pen {
+  background: linear-gradient(to right, #2e2e2e, #0d0d0d);
+  width: 100%;
+  height: 200px;
+  display: flex;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.card-pen p {
+  /* background-color: red; */
+  width: 80%;
+  height: 100%;
+  padding-top: 5px;
+
+  font-family: "Roboto Condensed";
+  font-size: 42px;
+  font-weight: 200;
+  color: #fddda4;
+}
+
+.card-pen div {
+  /* background-color: blue; */
+  position: relative;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.card-pen img {
+  /* background-color: red; */
+  position: absolute;
+  height: 280px;
+  /* transform: rotate(-20deg); */
+  top: -80px;
+  right: 20px;
+}
+
+.background-image-star {
+  background-image: url("../assets/imgs/digitalService.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* background-color: red; */
+  width: 100%;
+  height: 260px;
+
+  padding: 130px 0 0 25px;
+
+  font-family: "Roboto Condensed";
+  font-size: 45px;
+  font-weight: 300;
+  line-height: 40px;
 }
