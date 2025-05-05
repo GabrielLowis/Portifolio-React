@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import InputSound from "../components/InputSound";
@@ -16,13 +15,17 @@ import "../styles/page.css";
 
 const Page = () => {
   const [showInputSound, setShowInputSound] = useState(false);
-
   const images = [bestImg, imagemTeste, bestImg, imagemTeste];
-
   const navigate = useNavigate();
 
   return (
-    <div className="screen">
+    <motion.div
+      className="screen"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }} // Aqui está a mágica da animação de saída
+      transition={{ duration: 0.6 }}
+    >
       <CustomCursor />
 
       <motion.header
@@ -30,10 +33,7 @@ const Page = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <h2
-          onClick={() => navigate("/projects")}
-          style={{ cursor: "pointer" }}
-        >
+        <h2 onClick={() => navigate("/about")} style={{ cursor: "pointer" }}>
           GABRIEL
         </h2>
       </motion.header>
@@ -99,7 +99,7 @@ const Page = () => {
           <RightBar />
         </motion.div>
       </main>
-    </div>
+    </motion.div>
   );
 };
 

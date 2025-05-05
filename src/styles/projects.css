@@ -1,297 +1,282 @@
-@import url("https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
-
-.roboto-condensed {
-  font-family: "Roboto Condensed", sans-serif;
-  font-optical-sizing: auto;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
 
 .screen-projects {
   background-color: black;
+  width: 100%;
   height: 100vh;
-  width: 100%;
+  display: flex;
 }
 
-.screen-projects header {
+.main-projects {
+  background-color: #f9f6ee;
+  display: flex;
+  width: 98%;
+  height: 95%;
+  margin: auto;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+/* --------------------------------------- */
+
+.one-section-projects {
   /* background-color: red; */
-  height: 10vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 160px;
-  /* padding-top: 25px; */
-
-  font-family: "Lekton", monospace;
-  font-size: 25px;
-  color: white;
-}
-
-.screen-projects main {
-  /* background-color: red; */
-  width: 100%;
-  height: 90vh;
-  display: flex;
-}
-
-.screen-projects main > div {
-  /* background-color: red; */
-  width: 33%;
-  height: 100%;
-}
-
-.screen-projects main > div:nth-of-type(1) {
-  /* background-color: red; */
-  padding: 25px;
-  display: flex;
-  flex-direction: column;
-}
-
-.card-one-projects {
-  background-color: #fddda4;
-  max-width: 90%;
-  height: 210px;
-  display: flex;
-  padding: 15px 20px;
-  border-radius: 15px;
-  margin-top: 130px;
-}
-
-.name-card-projects {
-  /* background-color: blue; */
-  width: 40%;
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  overflow: visible;
-}
-
-.name-card-projects img {
-  width: 300px;
-  margin-left: -55px;
-  transform: rotate(-20deg);
-  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 1));
-}
-
-.text-container {
-  /* background-color: green; */
-  display: flex;
-  width: 60% !important;
-  align-items: center;
-  padding: 15px;
-}
-
-.text-container h2 {
-  max-width: 100% !important;
-  font-family: "Roboto Condensed";
-  font-weight: 300;
-  font-size: 40px;
-  color: black;
-}
-
-.text-container h2 b {
-  font-weight: 700;
-}
-
-.container-cards-projects {
-  display: flex;
-  flex-direction: row;
-  width: 90%;
-  height: 100%;
-  /* background-color: gray; */
-  margin-top: 20px;
-
-  gap: 20px;
-}
-
-.card-two-projects {
-  /* background-color: gray; */
-  background-image: linear-gradient(
-      to bottom,
-      black 0%,
-      transparent 20%,
-      transparent 80%,
-      black 100%
-    ),
-    url("../assets/imgs/clock.jpg");
-  background-repeat: no-repeat;
+  background-image: url("../assets/imgs/prjGDM1.png");
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
-
-  position: relative;
-  width: 50%;
-  height: 100%;
+  width: 75%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 15px;
-  border-radius: 15px;
+  padding: 0 16px;
+  border-radius: 30px 0 0 30px;
 
-  font-family: "Roboto Condensed";
-  font-size: 25px;
-  line-height: 20px;
-  color: white;
+  /* font-family: "Roboto Condensed"; */
+  /* font-size: 36px; */
 }
 
-.card-two-projects p:nth-of-type(2) {
-  font-size: 12px;
-  line-height: 12px;
-}
-
-.arrow-card-projects {
-  background-color: black;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  padding: 10px 5px 5px 10px;
-  border-radius: 15px 0 0 0;
-}
-
-.arrow-card-projects div {
-  background-color: #fddda4;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* padding: 5px; */
-  border-radius: 100%;
-  transform: rotate(145deg);
-}
-
-.arrow-card-projects-2 {
-  background-color: black;
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 5px 5px 10px 10px;
-  border-radius: 0 0 0 15px;
-}
-
-.arrow-card-projects-2 div {
-  background-color: white;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* padding: 5px; */
-  border-radius: 100%;
-  transform: rotate(45deg);
-}
-
-.card-three-projects {
-  background-color: rgb(36, 36, 36);
-  position: relative;
-  width: 50%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-  justify-content: end;
-  padding: 70px 15px 15px 80px;
-  border-radius: 15px;
-  gap: 20px;
-
-  font-family: "Roboto Condensed";
-  font-size: 35px;
-  line-height: 30px;
-  color: white !important;
-  text-align: right;
-}
-
-.card-three-projects img {
-  position: absolute;
-  top: -10px;
-  left: -24px;
-  width: 130px !important;
-  transform: rotate(75deg);
-}
-
-.card-three-projects p:nth-of-type(2) {
-  /* background-color: red; */
-  width: 150px; /* define o tamanho */
-  word-wrap: break-word; /* permite quebra de palavra longa */
-  overflow-wrap: break-word; /* mesma coisa, mais compatível */
-
-  font-size: 12px;
-  line-height: 12px;
-}
-
-.screen-projects main > div:nth-of-type(2) {
-  background: linear-gradient(to right, black, gray 50%, black),
-    linear-gradient(to bottom, black, gray 50%, black);
-  background-blend-mode: multiply;
-}
-
-/* ----------------------------------------------------------------------------- */
-.screen-projects main > div:nth-of-type(3) {
-  /* background-color: red; */
-  padding: 25px;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  gap: 40px;
-}
-
-.card-pen {
-  background: linear-gradient(to right, #2e2e2e, #0d0d0d);
-  width: 100%;
-  height: 200px;
-  display: flex;
-  padding: 20px;
-  border-radius: 15px;
-}
-
-.card-pen p {
-  /* background-color: red; */
-  width: 80%;
-  height: 100%;
-  padding-top: 5px;
-
-  font-family: "Roboto Condensed";
-  font-size: 42px;
-  font-weight: 200;
-  color: #fddda4;
-}
-
-.card-pen div {
-  /* background-color: blue; */
-  position: relative;
-  width: 50%;
-  height: 100%;
-  display: flex;
-  justify-content: end;
-}
-
-.card-pen img {
-  /* background-color: red; */
-  position: absolute;
-  height: 280px;
-  /* transform: rotate(-20deg); */
-  top: -80px;
-  right: 20px;
-}
-
-.background-image-star {
-  background-image: url("../assets/imgs/digitalService.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  /* background-color: red; */
-  width: 100%;
-  height: 260px;
-
-  padding: 130px 0 0 25px;
-
-  font-family: "Roboto Condensed";
-  font-size: 45px;
+.one-section-projects p {
+  margin-top: 14px;
+  margin-left: 25px;
+  font-size: 40px;
+  font-family: "Montserrat";
   font-weight: 300;
-  line-height: 40px;
+}
+
+.one-section-projects div {
+  /* background-color: rgba(255, 0, 0, 0.31);  */
+  position: relative;
+  width: 50%;
+  padding-bottom: 15px;
+}
+
+.one-section-projects div h1 {
+  /* background-color: green; */
+  font-family: "Montserrat", sans-serif;
+  font-size: 63px;
+  font-weight: 300;
+  line-height: 70px;
+  margin-left: 15px;
+}
+
+.one-section-projects div span {
+  font-weight: 700;
+}
+
+.one-section-projects div button {
+  background-color: black;
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  height: 40px;
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  cursor: pointer;
+
+  border-radius: 20px;
+  border: none;
+
+  font-family: "Roboto Condensed", sans-serif;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+.two-section-projects {
+  /* background-color: blue; */
+  width: 25%;
+  padding-right: 15px;
+  border-radius: 0 30px 30px 0;
+}
+
+.header-projects {
+  /* background-color: green; */
+  width: 100%;
+  height: 40px;
+  margin-top: 15px;
+  display: flex;
+}
+
+.header-projects-contact {
+  /* background-color: red; */
+  width: 60%;
+  display: flex;
+  border: 3px solid black;
+  border-radius: 100px;
+}
+
+.icon-header-projects {
+  /* background-color: blue; */
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-right: 3px solid black;
+}
+
+.text-header-projects {
+  /* background-color: blue; */
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 15px;
+
+  font-family: "Roboto Condensed";
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.text-header-projects img {
+  height: 100%;
+  border-radius: 50%;
+}
+
+.menu-header-projects {
+  background-color: black;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.line {
+  background-color: white;
+  width: 50%;
+  height: 2px;
+}
+
+/* -------------------------------------------------------- */
+
+.card-products-projects {
+  background-color: #ffe6e4;
+  position: relative;
+  width: 100%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  border-radius: 35px;
+  padding: 10px;
+
+  font-family: "Montserrat", sans-serif;
+}
+
+.card-products-projects h2 {
+  font-size: 30px;
+}
+
+.card-products-projects p {
+  margin-top: 10px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.card-products-projects img {
+  width: 340px;
+  height: 180px;
+  border-radius: 25px;
+  margin-top: 10px !important;
+  margin: 0 auto;
+}
+
+.card-products-projects-points {
+  /* background-color: green; */
+  position: absolute;
+  left: 130px;
+  bottom: 25px;
+  display: flex;
+  gap: 5px;
+  width: 100px;
+  height: 7px;
+}
+
+.point {
+  background-color: rgba(255, 255, 255, 0.475);
+  width: 30%;
+  height: 7px;
+  border-radius: 30px;
+}
+
+.point-checked {
+  background-color: white;
+  width: 70%;
+}
+
+.card-products-projects-button {
+  background-color: black;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* ----------------------------------------------------------------- */
+
+.two-card-products-projects {
+  background-image: url("../assets/imgs/robot1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  width: 100%;
+  /* width: 360px; */
+  height: 245px;
+  display: flex;
+  margin-top: 15px;
+  border-radius: 35px;
+}
+
+.two-card-products-projects-button {
+  background-color: black;
+  position: absolute;
+  bottom: 11px;
+  right: 12px;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* ---------------------------------------------------------------------------- */
+
+.two-card-legend {
+  background-color: rgba(255, 255, 255, 0.207);
+  backdrop-filter: blur(5px); /* Aplica o blur */
+  -webkit-backdrop-filter: blur(5px); /* Suporte para Safari */
+  width: 260px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+  margin-bottom: 5px;
+  margin-left: 15px;
+
+  border-radius: 20px;
+
+  font-family: "Montserrat", sans-serif;
+  color: white;
 }

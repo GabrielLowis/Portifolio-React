@@ -1,9 +1,18 @@
 import { useEffect, useState } from "react";
-import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  useNavigate,
+  useLocation,
+} from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
 
 import Loader from "./components/Loader";
-import Page from "./pages/Page.tsx";
-import Projects from "./pages/Projects.tsx";
+import Page from "./pages/Page";
+import About from "./pages/About";
+import Projects from "./pages/Projects";
+
 import "./styles/app.css";
 
 // LoaderScreen separado para poder usar navigate dentro
@@ -41,15 +50,27 @@ function LoaderScreen() {
   );
 }
 
+// Separar o conteúdo para usar useLocation dentro de BrowserRouter
+function AnimatedRoutes() {
+  const location = useLocation();
+
+  return (
+    <AnimatePresence mode="wait">
+      <Routes location={location} key={location.pathname}>
+        <Route path="/" element={<LoaderScreen />} />
+        <Route path="/page" element={<Page />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/projects" element={<Projects />} />
+      </Routes>
+    </AnimatePresence>
+  );
+}
+
 function App() {
   return (
     <div className="app">
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<LoaderScreen />} />
-          <Route path="/page" element={<Page />} />
-          <Route path="/projects" element={<Projects />} />
-        </Routes>
+        <AnimatedRoutes />
       </BrowserRouter>
     </div>
   );
